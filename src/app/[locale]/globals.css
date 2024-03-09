@@ -1,33 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Primary */
+  --color-dark-grey: #24232C;
+  --color-grey: #817D92;
+  --color-almost-white: #E6E5EA;
+  --color-very-dark-grey: #18171F;
+  --color-neon-green: #A4FFAF;
+  --color-red: #F64A4A;
+  --color-orange: #FB7C58;
+  --color-yellow: #F8CD65;
+
+  /* Font sizes */
+  --font-size-heading-l: 32px;
+  --font-size-heading-m: 24px;
+  --font-size-body: 18px;
+
+  /* Font line height */
+  --font-line-heading-l: 43px;
+  --font-line-heading-m: 31px;
+  --font-line-body: 23px;
+  --font-letter-spacing-body-s: -0.23px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: var(--font-size-body);
+  line-height: var(--font-line-body);
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 500;
+  background-color: var(--color-very-dark-grey);
+  color: var(--color-almost-white);
+  padding: 1.6rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+main {
+  max-width: 54rem;
+  width: 100%;
+}
+
+main h1 {
+  font-size: var(--font-size-heading-m);
+  line-height: var(--font-line-heading-m);
+  color: var(--color-grey);
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 2.4rem;
   }
 }

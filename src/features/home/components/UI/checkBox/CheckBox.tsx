@@ -1,6 +1,8 @@
+"use client"
+
 import React from 'react';
 
-import { ReactComponent as CheckIcon } from '../../../images/icon-check.svg';
+import  CheckIcon  from '@images/icon-check.svg';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { selectParams } from '../../../store/passwordSlice';
 import { setParams } from '../../../store/passwordSlice';

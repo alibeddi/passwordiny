@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../styles/GlobalStyles';
+// import { media } from '../../styles/GlobalStyles';
 
 interface IProps {
   password: string | null;
@@ -22,9 +22,7 @@ export const DisplayWrapper = styled.div`
     }
   }
 
-  ${media.phone} {
-    padding: 1.9rem 1.6rem;
-  }
+
 `;
 
 export const Password = styled.h2<IProps>`
@@ -33,8 +31,5 @@ export const Password = styled.h2<IProps>`
   color: var(--color-almost-white);
   opacity: ${(props) => (props.password ? '1' : '0.25')};
 
-  ${media.phone} {
-    font-size: var(--font-size-heading-m);
-    line-height: var(--font-line-heading-m);
-  }
+
 `;

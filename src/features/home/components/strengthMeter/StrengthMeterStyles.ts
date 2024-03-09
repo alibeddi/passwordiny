@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { media } from '../../styles/GlobalStyles';
+// import { media } from '../../styles/GlobalStyles';
 
 interface IProps {
   color: string;
@@ -20,9 +20,7 @@ export const StrengthMeterWraper = styled.div`
     color: var(--color-grey);
   }
 
-  ${media.phone} {
-    padding: 1.6rem 1.4rem;
-  }
+  
 `;
 
 export const Meter = styled.div`
@@ -35,10 +33,7 @@ export const Meter = styled.div`
     font-size: var(--font-size-heading-m);
     line-height: var(--font-line-heading-m);
 
-    ${media.phone} {
-      font-size: var(--font-size-body);
-      line-height: var(--font-line-body);
-    }
+  
   }
 `;
 

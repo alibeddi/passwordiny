@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { media } from '../../../styles/GlobalStyles';
+// import { media } from '../../../styles/GlobalStyles';
 interface IProps {
   max: string;
   value: number;
@@ -25,10 +25,7 @@ export const SliderContent = styled.div`
     line-height: var(--font-line-heading-l);
     color: var(--color-neon-green);
 
-    ${media.phone} {
-      font-size: var(--font-size-heading-m);
-      line-height: var(--font-line-heading-m);
-    }
+  
   }
 `;
 

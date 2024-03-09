@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { SliderContent, SliderComponent, SliderWrapper } from './SliderStyles';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';

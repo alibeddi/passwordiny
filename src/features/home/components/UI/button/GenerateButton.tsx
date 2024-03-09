@@ -1,6 +1,7 @@
+"use client"
 import React from 'react';
 import { Button } from './GenerateButtonStyles';
-import { ReactComponent as ArrowIcon } from '../../../images/icon-arrow-right.svg';
+import  ArrowIcon from '@images/icon-arrow-right.svg';
 import { useAppSelector } from '../../../store/hooks';
 import { useAppDispatch } from '../../../store/hooks';
 import { generatePassword } from '../../../store/passwordSlice';

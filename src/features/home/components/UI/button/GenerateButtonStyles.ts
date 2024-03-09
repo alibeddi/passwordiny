@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { media } from '../../../styles/GlobalStyles';
+
 
 export const Button = styled.button`
   width: 100%;
@@ -48,8 +48,5 @@ export const Button = styled.button`
     }
   }
 
-  ${media.phone} {
-    margin-top: 1.6rem;
-    height: 5.6rem;
-  }
+
 `;

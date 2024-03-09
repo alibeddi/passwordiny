@@ -1,12 +1,16 @@
+"use client"
+
 import React from 'react';
-import Display from '@src/features/home/components/display/Display';
-import { Options } from './componets/options/Options';
-import Slider from './componets/UI/slider/Slider';
-import CheckBox from './componets/UI/checkBox/CheckBox';
-import StrengthMeter from './componets/strengthMeter/StrengthMeter';
-import GenerateButton from './componets/UI/button/GenerateButton';
+import Display from '@/features/home/components/display/Display';
+import { Options } from '@/features/home/components/options/Options';
+import Slider from '@/features/home/components/UI/slider/Slider';
+import CheckBox from '@/features/home/components/UI/checkBox/CheckBox';
+import { Provider } from 'react-redux';
+import StrengthMeter from '@/features/home/components/strengthMeter/StrengthMeter';
+import GenerateButton from '@/features/home/components/UI/button/GenerateButton';
 function App() {
   return (
+    <Provider >
     <main>
       <h1>Password Generator</h1>
       <Display />
@@ -20,6 +24,7 @@ function App() {
         <GenerateButton />
       </Options>
       </main>
+      </Provider>
   );
 }
 
